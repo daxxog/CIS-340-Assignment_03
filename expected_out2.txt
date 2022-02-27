@@ -1,0 +1,36 @@
+Enter an amount to deposit into Account 1: 30
+Adding $1.05 interest to Account 1 (a SavingsAccount)
+
+Updated Account 1 balance: $36.05
+
+
+Account balance: $80.00
+
+Enter an amount to withdraw from Account 2: 100
+Debit amount exceeded account balance.
+
+Enter an amount to deposit into Account 2: 90
+$1.00 transaction fee charged.
+
+Updated Account 2 balance: $169.00
+
+
+Account 3 balance: $200.00
+
+Enter an amount to withdraw from Account 3: 100
+
+Enter an amount to deposit into Account 3: 0
+Adding $1.50 interest to Account 3 (a SavingsAccount)
+
+Updated Account 3 balance: $101.50
+
+
+Account 4 balance: $400.00
+
+Enter an amount to withdraw from Account 4: 100
+$0.50 transaction fee charged.
+
+Enter an amount to deposit into Account 4: 300
+$0.50 transaction fee charged.
+
+Updated Account 4 balance: $599.00

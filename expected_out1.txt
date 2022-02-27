@@ -1,0 +1,27 @@
+account1 balance: $50.00
+account2 balance: $25.00
+account3 balance: $80.00
+
+Attempting to debit account1 by $25.00
+account1 balance: $25.00
+
+Attempting to debit account2 by $30.00.
+Debit amount exceeded account balance.
+account2 balance: $25.00
+
+Attempting to debit account3 by $40.00.
+$1.00 transaction fee charged.
+account3 balance: $39.00
+
+Crediting $40.00 to account1.
+account1 balance: $65.00
+
+Crediting $65.00 to account2.
+account2 balance: $90.00
+
+Crediting $20.00 to account3.
+$1.00 transaction fee charged.
+account3 balance: $58.00
+
+Adding $2.70 interest to account2.
+New account2 balance: $92.70
