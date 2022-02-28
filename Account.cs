@@ -108,7 +108,7 @@ namespace AccountHierarchy {
 
             try {
                 balance -= amount;
-            } catch (InsufficientBalanceException ibe) {
+            } catch (InsufficientBalanceException) {
                 Console.WriteLine(DEBIT_ERROR_MESSAGE);
             }
         }

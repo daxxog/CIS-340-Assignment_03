@@ -11,6 +11,23 @@
 
 
 namespace AccountHierarchy {
-    class SavingsAccount {
+    class SavingsAccount : Account {
+        // constants
+        public const decimal DEFAULT_INTEREST_RATE = 0.00m;
+
+        // fields
+        private decimal _interestRate = DEFAULT_INTEREST_RATE;
+
+        public SavingsAccount(
+            decimal initialBalance = DEFAULT_BALANCE,
+            decimal initialInterestRate = DEFAULT_INTEREST_RATE
+        ) {
+            balance = initialBalance;
+            _interestRate = initialInterestRate;
+        }
+
+        public decimal CalculateInterest() {
+            return balance * _interestRate;
+        }
     }
 }

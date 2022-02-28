@@ -18,11 +18,9 @@ namespace AccountHierarchy {
             Console.WriteLine("test");
             Account a = new Account(0.00m);
             Console.WriteLine(a);
-            a.Credit(-1);
+            a.Credit(1);
             a.Credit(2);
             Console.WriteLine(a.Balance);
-            a.Debit(1.1m);
-            a.Debit(5.1m);
         }
     }
 }
