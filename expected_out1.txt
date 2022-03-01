@@ -2,7 +2,7 @@ account1 balance: $50.00
 account2 balance: $25.00
 account3 balance: $80.00
 
-Attempting to debit account1 by $25.00
+Attempting to debit account1 by $25.00.
 account1 balance: $25.00
 
 Attempting to debit account2 by $30.00.

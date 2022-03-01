@@ -13,7 +13,7 @@ output: exe
 
 .PHONY: test
 test: output
-	@diff expected.out InvoiceLINQOutput.txt
+	@diff expected_out1.txt AccountHierarchyTestOutput.txt
 
 
 .PHONY: help

@@ -9,6 +9,8 @@
  * @licence    MIT
  * ===============================================*/
 
+using System;
+
 
 namespace AccountHierarchy {
     class SavingsAccount : Account {
@@ -27,7 +29,7 @@ namespace AccountHierarchy {
         }
 
         public decimal CalculateInterest() {
-            return balance * _interestRate;
+            return Decimal.Round(balance * _interestRate, 2);
         }
     }
 }

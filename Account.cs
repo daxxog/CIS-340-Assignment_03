@@ -84,7 +84,7 @@ namespace AccountHierarchy {
         }
 
         // methods
-        private static void _validateGreaterThanOrEqualToZero(
+        protected static void _validateGreaterThanOrEqualToZero(
             decimal amount
         ) {
             // call this function before modifying the balance
@@ -93,7 +93,7 @@ namespace AccountHierarchy {
             }
         }
 
-        public void Credit(decimal amount) {
+        public virtual void Credit(decimal amount) {
             // this wasn't part of the assignment requirements, but it seemed sane to check if the
             // amount is non-negative before performing the operation
             Account._validateGreaterThanOrEqualToZero(amount);
@@ -101,7 +101,7 @@ namespace AccountHierarchy {
             balance += amount;
         }
 
-        public void Debit(decimal amount) {
+        public virtual void Debit(decimal amount) {
             // this wasn't part of the assignment requirements, but it seemed sane to check if the
             // amount is non-negative before performing the operation
             Account._validateGreaterThanOrEqualToZero(amount);
@@ -109,6 +109,10 @@ namespace AccountHierarchy {
             try {
                 balance -= amount;
             } catch (InsufficientBalanceException) {
+                // I don't really like this type of error handling
+                // (print and continue)
+                // but this is what the textbook assignment
+                // calls for in this case
                 Console.WriteLine(DEBIT_ERROR_MESSAGE);
             }
         }
