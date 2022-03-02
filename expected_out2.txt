@@ -1,10 +1,14 @@
+Account 1 balance: $25.00
+
+Enter an amount to withdraw from Account 1: 20
+
 Enter an amount to deposit into Account 1: 30
 Adding $1.05 interest to Account 1 (a SavingsAccount)
 
 Updated Account 1 balance: $36.05
 
 
-Account balance: $80.00
+Account 2 balance: $80.00
 
 Enter an amount to withdraw from Account 2: 100
 Debit amount exceeded account balance.
@@ -34,3 +38,5 @@ Enter an amount to deposit into Account 4: 300
 $0.50 transaction fee charged.
 
 Updated Account 4 balance: $599.00
+
+
