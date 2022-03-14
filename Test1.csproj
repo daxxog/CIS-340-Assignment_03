@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>AccountHierarchyTest</AssemblyName>
+    <RootNamespace>AccountHierarchy</RootNamespace>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="move AccountTest.cs .vs\AccountTest.cs&#xD;&#xA;echo namespace AccountHierarchy { &gt;&gt; Empty.cs&#xD;&#xA;echo class Empty123 { &gt;&gt; Empty.cs&#xD;&#xA;echo } &gt;&gt; Empty.cs&#xD;&#xA;echo } &gt;&gt; Empty.cs&#xD;&#xA;copy Empty.cs AccountTest.cs&#xD;&#xA;" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="move .vs\AccountTest.cs AccountTest.cs&#xD;&#xA;del Empty.cs" />
+  </Target>
+
+</Project>
